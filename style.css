@@ -44,7 +44,7 @@ nav div {
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(23, 23, 23,0.3);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
