@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(23, 23, 23);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -44,7 +44,7 @@ nav div {
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    background-color: #15151538;
+    background-color: rgb(23, 23, 23);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
