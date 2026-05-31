@@ -25,7 +25,7 @@ The goal of this project is to practice building a clean, responsive static webs
 ## How to View Locally
 1. Clone the repository (requires local Git configuration):
    ```bash
-   git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
+   git clone https://github.com/ayush9-prog/Memo.git
    ```
 2. Navigate to the project directory and open index.html in any modern web browser.
 
