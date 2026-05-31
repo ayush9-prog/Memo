@@ -8,9 +8,8 @@
     list-style: none;
 }
 
-main {
-    flex: 1;
-    /* This pushes down the footer by taking up all available space */
+:root {
+    --font: "Google Sans", sans-serif;
 }
 
 body {
@@ -18,11 +17,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    margin: 0;
 }
 
-:root {
-    --font: "Google Sans", sans-serif;
+main {
+    flex: 1;
+    /* This pushes down the footer by taking up all available space */
 }
 
 nav {
@@ -34,8 +33,6 @@ nav {
     align-items: center;
     margin: 20px 70px;
     font-size: 30px;
-    position: -webkit-sticky;
-    /* For Safari compatibility */
     position: sticky;
     top: 20px;
     z-index: 1000;
@@ -112,5 +109,9 @@ footer p {
     .pin {
         margin-bottom: 10px;
         border-radius: 10px;
+    }
+
+    footer p {
+        font-size: 3vw;
     }
 }
