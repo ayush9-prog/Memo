@@ -8,8 +8,17 @@
     list-style: none;
 }
 
+main {
+    flex: 1;
+    /* This pushes down the footer by taking up all available space */
+}
+
 body {
-    background-color: rgb(21, 21, 21);
+    background-color: rgb(7, 7, 7);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 }
 
 :root {
@@ -25,13 +34,15 @@ nav {
     align-items: center;
     margin: 20px 70px;
     font-size: 30px;
-    position: -webkit-sticky; /* For Safari compatibility */
+    position: -webkit-sticky;
+    /* For Safari compatibility */
     position: sticky;
     top: 20px;
     z-index: 1000;
 }
 
-nav ul li a, nav div {
+nav ul li a,
+nav div {
     border-radius: 15px;
     padding: 10px 15px;
     display: flex;
@@ -67,6 +78,20 @@ nav ul li a, nav div {
     display: block;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer p {
+    font-family: var(--font);
+    font-weight: 500;
+    color: rgb(37, 37, 37);
+}
+
 /* 4. Responsive Design for Mobile Screens */
 @media (max-width: 768px) {
     .memo {
@@ -79,7 +104,8 @@ nav ul li a, nav div {
         margin: 20px 30px;
     }
 
-    nav ul li a, nav div {
+    nav ul li a,
+    nav div {
         border-radius: 10px;
     }
 
