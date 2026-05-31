@@ -1,7 +1,127 @@
 /* Reset Line  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    list-style: none;
 }
 
+body {
+    background-color: rgb(21, 21, 21);
+}
+
+:root {
+    --header-bg-color: red;
+    --font: "Google Sans", sans-serif;
+}
+
+
+nav {
+    font-family: var(--font);
+    color: rgb(245, 245, 245);
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 70px;
+    font-size: 30px;
+    /* To make nav on top */
+    position: -webkit-sticky; /* For Safari compatibility */
+    position: sticky;
+    top: 20px;
+    z-index: 1000;
+}
+
+nav ul li a, nav div {
+    border-radius: 15px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    background-color: #15151538;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+/* 1. The Main Container */
+.memo {
+    /* Sets up 3 columns for desktop screens */
+    column-count: 3;
+    /* The space/gap between your columns */
+    column-gap: 16px;
+    width: 100%;
+    max-width: 1300px;
+    /* Adjust this to cap how wide your grid gets */
+    margin: 0 auto;
+    /* Centers the grid on the screen */
+    padding: 16px;
+}
+
+/* 2. Each Individual Pin Container */
+.pin {
+    /* CRITICAL: Prevents an image from breaking/splitting across two columns */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 16px;
+    /* Space between images stacked vertically */
+    border-radius: 15px;
+    /* Optional: gives soft rounded corners like Pinterest */
+    overflow: hidden;
+}
+
+/* 3. The Images inside the Pins */
+.pin img {
+    width: 100%;
+    /* Forces image to span the full width of the column */
+    height: auto;
+    /* Maintains original aspect ratio so heights stay uneven */
+    display: block;
+    /* Removes weird default inline bottom spacing */
+}
+
+/* 4. Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+    .memo {
+        /* Drops it down to 1 column on mobile phones */
+        column-count: 2;
+        column-gap: 10px;
+    }
+
+    nav {
+        font-size: 20px;
+        margin: 20px 30px;
+    }
+
+    nav ul li a, nav div {
+    border-radius: 10px;
+
+}
+
+.pin {
+    /* Space between images stacked vertically */
+    border-radius: 10px;
+}
+
+.memo {
+    /* Sets up 3 columns for desktop screens */
+    /* The space/gap between your columns */
+    column-gap: 10px;
+    width: 100%;
+    max-width: 1300px;
+    /* Adjust this to cap how wide your grid gets */
+    margin: 0 auto;
+    /* Centers the grid on the screen */
+    padding: 16px;
+}
+
+.pin {
+    /* CRITICAL: Prevents an image from breaking/splitting across two columns */
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    /* Space between images stacked vertically */
+    /* Optional: gives soft rounded corners like Pinterest */
+    overflow: hidden;
+}
+}
