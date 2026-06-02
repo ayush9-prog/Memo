@@ -10,10 +10,11 @@
 
 :root {
     --font: "Google Sans", sans-serif;
+    --bg-color: rgb(8 8 8);
 }
 
 body {
-    background-color: rgb(23, 23, 23);
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -44,7 +45,7 @@ nav div {
     padding: 10px 15px;
     display: flex;
     align-items: center;
-    background-color: rgb(23, 23, 23,0.3);
+    background-color: color-mix(in srgb, var(--bg-color) 20%, transparent);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
