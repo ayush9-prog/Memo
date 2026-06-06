@@ -21,8 +21,8 @@ body {
 }
 
 main {
-    flex: 1;
     /* This pushes down the footer by taking up all available space */
+    flex: 1;
 }
 
 nav {
