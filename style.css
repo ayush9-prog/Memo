@@ -21,7 +21,7 @@ body {
 }
 
 main {
-    /* This pushes down the footer by taking up all available space */
+    /* This pushes down the footer by taking up all space */
     flex: 1;
 }
 
